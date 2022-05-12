@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import heroBg from "./assets/image-hero-desktop.png";
+import databiz from './assets/client-databiz.svg'
+import phile from './assets/client-audiophile.svg'
+import meet from './assets/client-meet.svg'
+import maker from './assets/client-maker.svg'
 
-function App() {
+import "./app.scss";
+
+const app = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <main className="">
+        <div className="main__content">
+          <h1 className="bold-text">Make <br /> Remote Work</h1>
+          <p className="p-text">
+            Get your team in sync, no matter your location. <br /> Streamline
+            processes, create team rituals, and <br /> watch productivity soar.
+          </p>
+          <a href="http://" className="btn-primary">Lean More</a>
+          <div className="social-icons">
+              <img src={databiz} />
+              <img src={phile} />
+              <img src={meet} />
+              <img src={maker} />
+          </div>
+        </div>
+        <div className="main__hero-img">
+          <img src={heroBg} alt='main image' className="hero-img"/>
+        </div>
+      </main>
+    </>
   );
-}
+};
 
-export default App;
+export default app;
