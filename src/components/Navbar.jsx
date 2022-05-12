@@ -19,16 +19,6 @@ const Navbar = () => {
         <li className='nav__list-item'><p className='p-text login'>Login</p></li>
         <li className='nav__list-item'><p className='p-text register'>Register</p></li>
       </ul>
-
-
-
-
-
-
-
-
-
-
     </nav>
   )
 }
