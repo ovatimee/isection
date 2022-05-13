@@ -12,28 +12,31 @@ const app = () => {
   return (
     <>
       <Navbar />
-      <main className="">
-        <div className="main__content">
-          <h1 className="bold-text">
-            Make <br /> Remote Work
-          </h1>
-          <p className="p-text">
-            Get your team in sync, no matter your location. <br /> Streamline
-            processes, create team rituals, and <br /> watch productivity soar.
-          </p>
-          <a href="http://" className="btn-primary">
-            Lean More
-          </a>
-        </div>
-        <div className="main__hero-img">
-          <img src={heroBg} alt="main image" className="hero-img" />
-        </div>
-        <div className="social-icons">
-          <img src={databiz} />
-          <img src={phile} />
-          <img src={meet} />
-          <img src={maker} />
-        </div>
+      <main className="app__flex">
+        <section className="app__container">
+        <div className="main__hero-img row-span-2">
+            <img src={heroBg} alt="main image" className="hero-img" />
+          </div>
+          <div className="main__content col-1">
+            <h1 className="bold-text">
+              Make <br /> Remote Work
+            </h1>
+            <p className="p-text">
+              Get your team in sync, no matter your location. <br /> Streamline
+              processes, create team rituals, and <br /> watch productivity
+              soar.
+            </p>
+            <a href="http://" className="btn-primary">
+              Lean More
+            </a>
+          </div>
+          <div className="social-icons">
+            <img src={databiz} />
+            <img src={phile} />
+            <img src={meet} />
+            <img src={maker} />
+          </div>
+        </section>
       </main>
     </>
   );
