@@ -1,4 +1,4 @@
-# Frontend Mentor - Intro section with dropdown navigation solution
+# React - Intro section with dropdown navigation
 
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). I like doing challenges and hackathons it helps improve my coding skils. 
 
