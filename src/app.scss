@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+body{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  color: var(--gray);
+  display: grid;
+  place-items: center;
+}
+
 
 :root {
   --white: hsl(0, 0%, 98%);
   --gray: hsl(0, 0%, 41%);
   --black: hsl(0, 0%, 8%);
   --primary: rgb(111, 108, 235);
+
+  --transition: all 500ms ease-in;;
 }
 
 a{
@@ -17,15 +28,12 @@ a{
 }
 
 .bold-text {
-  font-size: 7em;
+  font-size: 5em;
   font-weight: 700;
   margin-top: 0;
-  @media screen and (max-width: 768px) {
-    font-size: 4em;
-  }
-}
+  color: #000;
 
-.p-text {
-  font-size: 1.2em;
-  font-weight: 500;
+  @media screen and (max-width: 768px) {
+    font-size: 3em;
+  }
 }

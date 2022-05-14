@@ -5,7 +5,7 @@ import './Header.scss'
 
 const Header = () => {
     return (
-        <main className="container app__flex">
+        <div className="container">
             <section className="app__container">
                 <div className="main__hero-img row-span-2">
                     <img src={images.heroDesktop} alt="main image" className="hero-img" />
@@ -30,7 +30,7 @@ const Header = () => {
                     <img src={images.make} />
                 </div>
             </section>
-        </main>
+        </div>
     )
 }
 

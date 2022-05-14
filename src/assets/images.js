@@ -12,6 +12,7 @@ import reminders from './icon-reminders.svg'
 import todo from './icon-todo.svg'
 import heroDesktop from './image-hero-desktop.png'
 import heroMobile from './image-hero-mobile.png'
+import logo from './logo.svg'
 
 
 export default {
@@ -28,5 +29,6 @@ export default {
     closeMenu,
     planning,
     reminders,
-    heroMobile
+    heroMobile,
+    logo
 }

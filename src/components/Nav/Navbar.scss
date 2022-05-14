@@ -6,9 +6,16 @@ nav {
   margin: 2rem;
   position: relative;
 
+  .nav__menu {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
     .nav__list {
       display: none;
+    }
+    .nav__menu {
+      display: block;
     }
   }
 }
@@ -29,10 +36,16 @@ nav {
   li {
     list-style: none;
     cursor: pointer;
-    z-index: 2;
+    transition: var(--transition);
+
+    a {
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: inherit;
+    }
 
     &:hover {
-      color: var(--primary);
+      color: #000;
     }
   }
 }
@@ -40,9 +53,14 @@ nav {
 .nav__list-item:nth-child(5) {
   margin-left: auto;
 }
+.nav__list-item:nth-child(6) {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+}
 
-.nav__list-item:nth-child(-n+2)::after{
+.nav__list-item:nth-child(-n + 2)::after {
   content: url(../../assets/icon-arrow-down.svg);
   position: absolute;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
