@@ -1,44 +1,27 @@
-.container {
-  padding: 2rem 4rem;
-}
-
 .app__container {
-  display: grid;
-  place-items: center;
   gap: 3rem;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-  .col-1 {
-    grid-row-start: 1;
-  }
-
-  .row-span-2 {
-    grid-row-end: span 2;
-    grid-column-start: 2;
-  }
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .main__content {
-  padding: 1.5rem 2rem;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   flex-direction: column;
+  letter-spacing: .11px;
 
   line-height: 1;
   .btn-primary {
     color: #fff;
     background: #000;
-    padding: 1rem;
     max-width: fit-content;
     border-radius: 0.5rem;
     text-align: center;
     border: 1px solid hsl(0, 0%, 8%);
+    margin-inline: auto;
     padding: 1rem 2rem;
 
     transition: var(--transition);
@@ -48,32 +31,70 @@
       background: transparent;
       color: #000;
     }
-
-    @media screen and (max-width: 768px) {
-      align-self: center;
-    }
+  }
+  h1{
+    color: #000;
   }
   p {
     font-weight: 500;
+    font-size: 1.2em;
     line-height: 1.5;
   }
 }
 
 .main__hero-img {
-  width: 75%;
+  max-width: 30rem;
   height: auto;
 
-  .hero-img {
+  img {
     width: 100%;
-    height: 100%;
     display: block;
     object-fit: cover;
   }
+
 }
 
 .social-icons {
-  width: 100%;
-  padding-left: 5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 130px);
+  display: flex;
+  gap: 2rem;
+  max-width: 300px;
+  img{
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+ .main__hero-img{
+   justify-content: flex-end;
+   align-items: flex-end;
+ } 
+}
+
+@media screen and (max-width: 768px) {
+  .main__content{
+    text-align: center;
+  }
+  .social-icons{
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main__hero-img{
+    align-items: center;
+    img{
+      width: 342px;
+      height: 342px;
+    }
+  }
+  .main__content{
+    p{
+      font-size: 16px;
+    }
+    h1{
+      font-size: 35px;
+    }
+  }
+  
 }
