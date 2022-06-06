@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="container">
       <section className="app__container">
-    <div className="hero-image">
+    <div>
         <picture >
           <source
             media="(min-width: 768px)"
@@ -18,7 +18,6 @@ const Header = () => {
           <img className="main__hero-img row-span-2" src={images.heroMobile} />
         </picture>
     </div>
-    <div className="hero-content">
         <div className="main__content col-1">
           <h1 className="heading">Make Remote Work</h1>
           <p className="text">
@@ -29,13 +28,6 @@ const Header = () => {
             Learn More
           </a>
         </div>
-        <div className="social-icons">
-          <img src={images.databiz} />
-          <img src={images.audiophile} />
-          <img src={images.meet} />
-          <img src={images.make} />
-        </div>
-    </div>
       </section>
     </div>
   );
