@@ -9,10 +9,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className='logo'>
+      <div className='navbar-logo'>
         <img src={images.logo} alt='logo' className='logo-svg' />
       </div>
-      <ul className='nav__list app-flex'>
+      <ul className='navbar-links app-flex'>
         {['Features', 'Company', 'Careers', 'About', 'Logins', 'Register'].map((item) => (
           <li className='nav__list-item'>
             <a href="">{item}</a>
@@ -23,10 +23,12 @@ const Navbar = () => {
         <img src={images.menu} alt="" onClick={() => setToggle(true)} />
         {toggle && (
           <div>
+          <div className='close-nav'>
             <img src={images.closeMenu} alt="" onClick={() => setToggle(false)} />
-            <ul className='nav__list'>
+          </div>
+            <ul>
               {['Features', 'Company', 'Careers', 'About', 'Logins', 'Register'].map((item) => (
-                <li className='nav__list-item'>
+                <li key={item} className='nav__list-item'>
                   <a href="">{item}</a>
                 </li>))}
             </ul>
